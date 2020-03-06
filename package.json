@@ -8,6 +8,7 @@
     "start": "ionic serve",
     "build": "ng build",
     "test": "ng test",
+    "test:local": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
