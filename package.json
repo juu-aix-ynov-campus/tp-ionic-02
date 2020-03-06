@@ -8,7 +8,7 @@
     "start": "ionic serve",
     "build": "ng build",
     "test": "ng test",
-    "test:local": "ng test",
+    "test:local": "ng test --code-coverage --watch --browsers=Chrome",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

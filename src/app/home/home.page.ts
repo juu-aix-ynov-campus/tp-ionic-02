@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  title: string;
+
   constructor() {}
 
+  updateTitle() {
+    this.title = 'Mon Nouveau Titre';
+  }
 }
