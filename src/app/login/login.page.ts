@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LoginService} from '../services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  id = '';
+  mdp: string = '';
+
+  constructor(private loginService: LoginService) { }
 
   ngOnInit() {
+  }
+
+  login() {
+    this.loginService.login(this.id, this.mdp);
   }
 
 }

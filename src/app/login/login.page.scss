@@ -1,15 +1,45 @@
-ion-content {
+:host {
+  display: flex;
+  align-items: center;
+
+  ion-content {
+    max-width: 400px;
+    display: flex;
+    div{
+      flex: 1;
+      ion-item {
+        margin-bottom: 5px;
+
+        ion-label {
+          color: blue;
+
+          &.color-red {
+            color: red;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/*ion-content {
   width: 400px;
 
   > ion-item {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
-    > ion-label {
-      color: blue;
-      &.color-red{
+    &:first-child {
+      > ion-label {
         color: red;
       }
     }
+
+    &:nth-child(2) {
+      > ion-label {
+        color: blue;
+      }
+    }
   }
-}
+}*/
 

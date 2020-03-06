@@ -1,11 +1,13 @@
 <ion-content>
-  <ion-item>
-    <ion-label position="floating">Identifiant</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating" class="color-red">Mot de Passe</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-  <ion-button color="primary">Connexion</ion-button>
+  <div>
+    <ion-item>
+      <ion-label position="floating">Identifiant</ion-label>
+      <ion-input [(ngModel)]="id"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" class="color-red">Mot de Passe</ion-label>
+      <ion-input type="password" [(ngModel)]="mdp"></ion-input>
+    </ion-item>
+    <ion-button [disabled]="mdp.length < 3 || id.length < 3" color="primary" (click)="login()">Connexion</ion-button>
+  </div>
 </ion-content>
