@@ -24,4 +24,17 @@ describe('LoginPage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Login', () => {
+    expect(component.user).toBeUndefined();
+
+    component.id = 'monId';
+    component.mdp = 'moonMdp';
+
+    component.login();
+
+    expect(component.user).toBeDefined();
+    expect(component.user.id).toBe('monId');
+
+  });
 });
