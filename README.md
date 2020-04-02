@@ -24,4 +24,4 @@
 - Build `ionic cordova build android --prod --release`
 - MAJ des fichiers Angular dans le projet Android Studio `ionic cordova prepare android --prod --no-build`
 - Emule le projet sur un device `ionic cordova emulate android --prod`
-- Liste des prérequis pour Android `ionic cordova requirements`
+- Liste des prérequis pour Android `ionic cordova requirements android`
