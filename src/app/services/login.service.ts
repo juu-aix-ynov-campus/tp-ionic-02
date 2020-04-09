@@ -5,9 +5,7 @@ import {Observable} from 'rxjs';
 import User from '../models/User';
 import {map} from 'rxjs/operators';
 
-@Injectable({
-    providedIn: 'root'
-})
+@Injectable()
 export class LoginService {
 
     constructor(private http: HttpClient) {
