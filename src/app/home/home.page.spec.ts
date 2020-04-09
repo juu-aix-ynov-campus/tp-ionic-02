@@ -3,6 +3,7 @@ import { IonicModule } from '@ionic/angular';
 import { Camera } from '@ionic-native/camera/ngx';
 
 import { HomePage } from './home.page';
+import {RouterTestingModule} from '@angular/router/testing';
 
 describe('HomePage', () => {
   let component: HomePage;
@@ -11,7 +12,7 @@ describe('HomePage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ HomePage ],
-      imports: [IonicModule.forRoot()],
+      imports: [IonicModule.forRoot(), RouterTestingModule],
       providers: [Camera]
     }).compileComponents();
 
