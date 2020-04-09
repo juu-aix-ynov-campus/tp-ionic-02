@@ -31,9 +31,9 @@
         <ion-label>Fire Alert</ion-label>
       </ion-item>
 
-      <ion-item>
+      <ion-item (click)="takePicture()" class="ion-activated">
         <ion-icon name="wine" slot="start"></ion-icon>
-        <ion-label>Card Link Item 2</ion-label>
+        <ion-label>Take picture</ion-label>
       </ion-item>
 
       <ion-item>
@@ -45,6 +45,9 @@
         <ion-icon name="walk" slot="start"></ion-icon>
         <ion-label>Card Button Item 2</ion-label>
       </ion-item>
+    </ion-card>
+    <ion-card *ngIf="imgData">
+      <img [src]="imgData">
     </ion-card>
   </div>
 </ion-content>

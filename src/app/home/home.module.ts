@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import {LoginService} from '../services/login.service';
+import { Camera } from '@ionic-native/camera/ngx';
 
 @NgModule({
   imports: [
@@ -20,6 +21,6 @@ import {LoginService} from '../services/login.service';
     ])
   ],
   declarations: [HomePage],
-  providers: [LoginService]
+  providers: [LoginService, Camera]
 })
 export class HomePageModule {}
