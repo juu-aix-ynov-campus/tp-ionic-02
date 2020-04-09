@@ -17,6 +17,8 @@
 - Ionic:
     - [Ionic UI Components](https://ionicframework.com/docs/components) :white_check_mark:
     - [Ionic Native](https://ionicframework.com/docs/native) *onglet Community* :white_check_mark:
+        - Camera *fait en cours*
+        - Geolocation *à faire*
     - Android local Build :white_check_mark:
 
 #### Scripts pour build Android
