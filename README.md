@@ -26,3 +26,8 @@
 - MAJ des fichiers Angular dans le projet Android Studio `ionic cordova prepare android --prod --no-build`
 - Emule le projet sur un device `ionic cordova emulate android --prod`
 - Liste des prérequis pour Android `ionic cordova requirements android`
+
+#### Debug depuis l'AVD
+
+- Dans Google Chrome `chrome://inspect`
+- Une catégorie *AOSP on IA Emulator* s'affiche, avec votre device et le bouton __inspect__
