@@ -19,6 +19,8 @@
     - [Ionic Native](https://ionicframework.com/docs/native) *onglet Community* :white_check_mark:
         - Camera *fait en cours*
         - Geolocation *à faire*
+        - Affichage d'une notification sur le clic d'un bouton *à faire*
+        - Affichage d'une preview de la caméra dans une NOUVELLE page *à faire*
     - Android local Build :white_check_mark:
 
 #### Scripts pour build Android
