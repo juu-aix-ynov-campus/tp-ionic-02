@@ -14,4 +14,14 @@
     <span *ngIf="error"> Une erreur est survenue : {{error}} </span>
     <span *ngIf="loading"> Chargement en cours... </span>
     <span *ngIf="user && !loading && !error"> Bienvenue {{user.nom}}</span>
+
+    <app-header></app-header>
+    <p>
+        <ion-button (click)="addPizza()">Ajout number</ion-button>
+    </p>
+    <p *ngFor="let numb of panier">
+        <ion-button
+                (click)="rmPizza(numb)">Rm number {{numb}}</ion-button>
+    </p>
+
 </ion-content>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {AlertController} from '@ionic/angular';
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
+import {LoginService} from '../services/login.service';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,9 @@ export class HomePage {
   title: string;
   imgData: string;
 
-  constructor(private alertController: AlertController, private camera: Camera) {}
+  constructor(private alertController: AlertController, private camera: Camera) {
+
+  }
 
   updateTitle() {
     this.title = 'Mon Nouveau Titre';

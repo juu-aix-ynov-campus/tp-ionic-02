@@ -6,6 +6,7 @@ import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 import {LoginService} from '../services/login.service';
+import {HeaderComponent} from '../header/header.component';
 
 describe('LoginPage', () => {
   let component: LoginPage;
@@ -23,7 +24,7 @@ describe('LoginPage', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoginPage ],
+      declarations: [ LoginPage , HeaderComponent],
       imports: [IonicModule.forRoot(), CommonModule, HttpClientTestingModule,
         FormsModule],
       providers: [LoginService]

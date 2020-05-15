@@ -15,8 +15,13 @@ export class LoginPage implements OnInit {
     user: User;
     loading = false;
     error: string;
+    panier: number[];
 
     constructor(private loginService: LoginService) {
+        this.loginService.panier
+            .subscribe(value => {
+                this.panier = value;
+            });
     }
 
     ngOnInit() {
@@ -27,7 +32,7 @@ export class LoginPage implements OnInit {
         this.error = null;
 
         this.loginService.login(this.id, this.mdp)
-            .subscribe(user => this.user = user,
+            .subscribe((user) => this.user = user,
                 error => {
                     this.error = error;
                     this.loading = false;
@@ -36,4 +41,11 @@ export class LoginPage implements OnInit {
                 });
     }
 
+    addPizza() {
+        this.loginService.addPizzaToCart(Math.floor(Math.random() * Math.floor(999)));
+    }
+
+    rmPizza(numb: number) {
+        this.loginService.deletePizzaFromCart(numb);
+    }
 }
