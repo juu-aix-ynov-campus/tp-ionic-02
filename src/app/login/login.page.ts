@@ -21,6 +21,7 @@ export class LoginPage implements OnInit {
         this.loginService.panier
             .subscribe(value => {
                 this.panier = value;
+                console.log('subscribe LoginPage');
             });
     }
 

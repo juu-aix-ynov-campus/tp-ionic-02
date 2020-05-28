@@ -14,10 +14,16 @@ export class HeaderComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.loginService.panier
+        const sub = this.loginService.panier
             .subscribe(value => {
                 this.count = value.length;
+                console.log('subscribe HeaderComponent');
             });
+
+        setTimeout(() => {
+            sub.unsubscribe();
+            console.log('unsubscribe HeaderComponent');
+        }, 10000);
     }
 
 }
